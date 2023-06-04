@@ -51,15 +51,6 @@ img.team_logo{
     width: auto;
 }
 
-/* img.logo{
-    width: 50%;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0.5;
-} */
-
 .nav a{
     margin-left: 60px;
     font-size: 25px;
@@ -92,22 +83,23 @@ img.team_logo{
     font-size: 30px;
 }
 
-.hero-text a{
+.hero-text .btnDownload{
+    font-family: 'squadron';
     font-size: 35px;
     background: transparent;
     border: 2px solid white;
     padding: 15px 20px;
     border-radius: 5px;
     transition: all 0.4s ease;
+    margin: 15px 0px;
 }
 
-.hero-text a:hover{
+.hero-text .btnDownload:hover{
     background: rgb(19, 19, 19);
     border: 2px solid transparent;
-    transform: translateX(8px);
 }
 
-.hero-text a i{
+.hero-text .btnDownload i{
     vertical-align: middle;
     font-size: 40px;
     margin-right: 10px;
@@ -117,6 +109,10 @@ img.team_logo{
     color: rgba(255, 255, 255, 0.5);
     font-weight: normal;
     font-size: 15px;
+}
+
+.hero-text h5 i{
+    margin-right: 5px;
 }
 
 .hero-video{
@@ -281,9 +277,6 @@ section.hero#sect2{
     .hero-text{
         padding-top: 6em;
         text-align: center;
-    }
-    .hero-text h1{
-        font-size: 60px;
     }
     .hero-video video{
         width: 350px;
