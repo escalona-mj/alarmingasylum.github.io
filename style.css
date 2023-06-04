@@ -1,0 +1,297 @@
+@font-face {
+    font-family: 'squadron';
+    src: url('https://raw.githubusercontent.com/escalona-mj/AlarmingAsylum/main/game/fonts/SuicideSquadron-rX0B.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'co2';
+    src: url('https://raw.githubusercontent.com/escalona-mj/AlarmingAsylum/main/game/fonts/Co2-wdOx.ttf') format('truetype');
+    font-style: normal;
+}
+
+*{
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    /* background: rgb(19, 19, 19); */
+    
+    background: url("https://raw.githubusercontent.com/escalona-mj/alarmingasylum.github.io/main/images/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: 'squadron';
+}
+
+header{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    z-index: 10;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3em 6em;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 10%, rgba(255,255,255,0) 100%);
+}
+
+ul.nav{
+    display: flex;
+}
+
+img.team_logo{
+    height: 40px;
+    width: auto;
+}
+
+/* img.logo{
+    width: 50%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.5;
+} */
+
+.nav a{
+    margin-left: 60px;
+    font-size: 25px;
+    border-bottom: 2px solid transparent;
+    transition: all 0.4s ease;
+}
+
+.nav a:hover{
+    border-bottom: 2px solid #ffcf00;
+}
+
+#hamburger{
+    font-size: 35px;
+    cursor: pointer;
+    display: none;
+}
+
+.hero-text h1{
+    font-family: 'co2';
+    font-size: 60px;
+    font-weight: normal;
+    transition: all 0.4s ease;
+}
+
+.hero-text h1:hover{
+    color: #ffcf00;
+}
+
+.hero-text p{
+    font-size: 30px;
+}
+
+.hero-text a{
+    font-size: 35px;
+    background: transparent;
+    border: 2px solid white;
+    padding: 15px 20px;
+    border-radius: 5px;
+    transition: all 0.4s ease;
+}
+
+.hero-text a:hover{
+    background: rgb(19, 19, 19);
+    border: 2px solid transparent;
+    transform: translateX(8px);
+}
+
+.hero-text a i{
+    vertical-align: middle;
+    font-size: 40px;
+    margin-right: 10px;
+}
+
+.hero-text h5{
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: normal;
+    font-size: 15px;
+}
+
+.hero-video{
+    text-align: center;
+}
+
+.hero-video video{
+    pointer-events: none;
+    border-radius: 10px;
+    transition: all 0.4s ease;
+    box-shadow: rgba(255, 255, 255, 0.5) 0px 0px 5px;
+    height: auto;
+    width: 600px;
+}
+
+section.hero{
+
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    padding: 0px 6em;
+    gap: 5em;
+}
+
+div.gradient{
+    background: linear-gradient(360deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+}
+
+section.hero#sect2{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    padding: 0px 6em;
+    gap: 5em;
+
+    /* background: url("images/asylum.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-attachment: fixed; */
+}
+
+/* .icons{
+    position: absolute;
+    top: 93%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+
+.icons i{
+    padding: 12px;
+    display: block;
+    font-size: 25px;
+    transition: all 0.4s ease;
+    color:rgba(255, 255, 255, 0.5);
+}
+
+.icons i:hover{
+    color:rgba(255, 255, 255, 0.9);
+    transform: translateY(-5px);
+} */
+
+
+
+/* smoller laptops */
+
+@media (max-width: 1160px){
+    .hero-video video{
+        width: 400px;
+    }
+
+    .hero-text h1{
+        font-size: 50px;
+    }
+    
+    .hero-text p{
+        font-size: 25px;
+        line-height: 1.10;
+    }
+    
+    .hero-text a{
+        font-size: 25px;
+    }
+    
+    .hero-text a i{
+        font-size: 25px;
+    }
+}
+
+/* tablets */
+
+@media (max-width: 871px){
+    img.team_logo{
+        height: 30px;
+        width: auto;
+    }
+    header{
+        padding: 2em;   
+    }
+    #hamburger{
+        display: block;
+    }
+    .nav{
+        font-family: 'co2';
+        top: 100%;
+        right: -105%;
+        width: 25%;
+        height: auto;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px 20px;
+        transition: all 0.4s ease;
+        position: absolute;
+        background: rgb(19, 19, 19);
+        border-radius: 10px;
+        box-shadow: rgba(255, 255, 255, 0.5) 0px 0px 5px;
+    }
+    .nav a{
+        display: block;
+        margin: 10px 0px;
+    }
+    .nav.open{
+        right: 5%;
+    }
+    .hero-text{
+        padding-top: 5em;
+        text-align: center;
+    }
+    .hero-video video{
+        width: 500px;
+    }
+    section.hero{
+        grid-template-columns: auto;
+        gap: 0em;
+    }
+    section.hero#sect2{
+        grid-template-columns: auto;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    section.hero#sect2 .hero-text{
+        padding-top: 0em;
+    }
+}
+
+/* mobile devices */
+
+@media (max-width: 650px){
+    .hero-text{
+        padding-top: 6em;
+        text-align: center;
+    }
+    .hero-text h1{
+        font-size: 60px;
+    }
+    .hero-video video{
+        width: 350px;
+    }
+    section.hero{
+        padding: 0 1em;
+    }
+    section.hero#sect2{
+        padding: 0 1em;
+    }
+}
