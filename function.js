@@ -1,3 +1,11 @@
+let menu = document.querySelector('#hamburger');
+let nav = document.querySelector('.nav');
+
+menu.onclick = () => {
+    menu.classList.toggle('hamburger-menu');
+    nav.classList.toggle('open');
+}
+
 //using the ScrollReveal from the external js script hosted in unpkg
 ScrollReveal({distance: '50px', duration: 2000, delay: 450});
 
