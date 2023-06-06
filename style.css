@@ -90,7 +90,7 @@ img.team_logo{
     cursor: pointer;
 
     background: transparent;
-    background-image: url("/images/btnDownload_idle.png");
+    background-image: url("images/btnDownload_idle.png");
     background-size: contain;
     background-position: center;
     background-origin: border-box;
@@ -102,7 +102,7 @@ img.team_logo{
 }
 
 .hero-text .btnDownload:hover{
-    background-image: url("/images/btnDownload_hover.png");
+    background-image: url("images/btnDownload_hover.png");
     background-size: contain;
     transform: scale(1.05, 1.05);
 }
