@@ -120,7 +120,7 @@ a.btnDownload:hover{
     transform: translateY(5px);
 }
 
-section.home-logo{
+section.home{
     height: 100%;
     width: 100%;
     min-height: 100vh;
@@ -132,7 +132,7 @@ section.home-logo{
     align-content: center;
 }
 
-.home-logo-image{
+.home-logo{
     text-align: center;
 }
 
@@ -210,7 +210,6 @@ section.about {
     position: relative;
     display: grid;
     grid-template-rows: auto;
-    background: linear-gradient(360deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%);
     padding: 0px 6em;
     align-content: space-evenly;
     justify-content: center;
@@ -231,7 +230,6 @@ section.about {
 .profile{
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.1);
-    background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(10px);
     display: grid;
     grid-template-columns: 25% 1fr;
@@ -260,14 +258,20 @@ section.about {
 
 .footer{
     text-align: center;
-    background-color: black;
-    padding: 10px 0px;
+    /* background-color: black; */
+    padding: 15px 0px;
+    width: 100%;
 
 }
 
 .footer p{
     font-size: 20px;
     color: rgba(255, 255, 255, 0.5);
+}
+
+.footer i{
+    color: rgba(255, 255, 255, 0.5);
+    vertical-align: middle;
 }
 
 /* smoller laptops */
@@ -408,7 +412,7 @@ section.about {
     section.hero#sect2{
         padding: 0 1em;
     }
-    section.home-logo{
+    section.home{
         padding: 0 1em;
     }
     section.about{
