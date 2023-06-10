@@ -21,6 +21,21 @@
     text-decoration: none;
 }
 
+p{
+    font-size: 30px;
+}
+
+h1{
+    font-family: 'co2';
+    font-size: 60px;
+    font-weight: normal;
+    transition: all 0.4s ease;
+}
+
+h1:hover{
+    color: #ffcf00;
+}
+
 body{
     background: url("images/bg.png");
     background-repeat: no-repeat;
@@ -46,7 +61,7 @@ ul.nav{
 }
 
 img.team_logo{
-    height: 40px;
+    height: 30px;
     width: auto;
 }
 
@@ -61,31 +76,9 @@ img.team_logo{
     border-bottom: 2px solid #ffcf00;
 }
 
-#hamburger{
-    font-size: 35px;
-    cursor: pointer;
-    display: none;
-}
-
-.hero-text h1{
-    font-family: 'co2';
-    font-size: 60px;
-    font-weight: normal;
-    transition: all 0.4s ease;
-}
-
-.hero-text h1:hover{
-    color: #ffcf00;
-}
-
-.hero-text p{
-    font-size: 30px;
-}
-
-.hero-text .btnDownload{
+a.btnDownload{
     font-family: 'squadron';
-    font-size: 35px;
-    border: 10px solid transparent;
+    border: 0px;
     cursor: pointer;
     padding: 15px 10px;
 
@@ -95,30 +88,80 @@ img.team_logo{
     background-position: center;
     background-origin: border-box;
     background-repeat: no-repeat;
-
-    transition: all 0.4s ease;
 }
 
-.hero-text .btnDownload:hover{
+a.btnDownload:hover{
     background-image: url("images/btnDownload_hover.png");
-    transform: scale(1.05, 1.05);
+    border-bottom: 0px solid transparent;
 }
 
-/* .hero-text .btnDownload i{
-    vertical-align: middle;
-    font-size: 40px;
-    margin-right: 10px;
-} */
+#hamburger{
+    cursor: pointer;
+    display: none;
+}
 
-.hero-text h5{
+.scroll-down{
+    position: absolute;
+    top: 93%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    z-index: 1;
+}
+.scroll-down i{
+    padding: 12px;
+    display: block;
+    font-size: 45px;
+    transition: all 0.4s ease;
+    color:rgba(255, 255, 255, 0.5);
+}
+.scroll-down i:hover{
+    color:rgba(255, 255, 255, 1);
+    transform: translateY(5px);
+}
+
+section.home-logo{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: grid;
+    grid-template-rows: auto;
+    align-items: center;
+    padding: 0px 6em;
+    align-content: center;
+}
+
+.home-logo-image{
+    text-align: center;
+}
+
+.home-text{
+    text-align: center;
+}
+
+.home-text p{
+    font-size: 35px;
+    padding: 0 4em;
+}
+
+.home-text h5{
     color: rgba(255, 255, 255, 0.5);
     font-weight: normal;
     font-size: 15px;
 }
 
-.hero-text h5 i{
+.home-text h5 i{
     color: #ffcf00;
     margin-right: 5px;
+}
+
+.home-text .btnDownload_mobile{
+    display: none;
+}
+
+img.logo{
+    width: 65%;
 }
 
 .hero-video{
@@ -148,14 +191,6 @@ section.hero{
     gap: 5em;
 }
 
-div.gradient{
-    background: linear-gradient(360deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%);
-    height: 100%;
-    width: 100%;
-    min-height: 100vh;
-    position: absolute;
-}
-
 section.hero#sect2{
     height: 100%;
     width: 100%;
@@ -168,43 +203,86 @@ section.hero#sect2{
     gap: 5em;
 }
 
-/* .icons{
-    position: absolute;
-    top: 93%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
+section.about {
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: grid;
+    grid-template-rows: auto;
+    background: linear-gradient(360deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    padding: 0px 6em;
+    align-content: space-evenly;
+    justify-content: center;
 }
 
-.icons i{
-    padding: 12px;
-    display: block;
-    font-size: 25px;
-    transition: all 0.4s ease;
-    color:rgba(255, 255, 255, 0.5);
+.about-header{
+    font-size: 45px;
+    font-family: 'squadron';
+    text-align: center;
 }
 
-.icons i:hover{
-    color:rgba(255, 255, 255, 0.9);
-    transform: translateY(-5px);
-} */
+.parent-profile{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+}
+
+.profile{
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    display: grid;
+    grid-template-columns: 25% 1fr;
+    padding: 2em;
+}
+
+.pfpic {
+    align-content: center;
+}
+
+.pfp{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.profile h1{
+    font-size: 40px;
+}
 
 
+.profile-desc{
+    display: grid;
+    align-content: center;
+}
+
+.footer{
+    text-align: center;
+    background-color: black;
+    padding: 10px 0px;
+
+}
+
+.footer p{
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.5);
+}
 
 /* smoller laptops */
 
 @media (max-width: 1160px){
+    .home-text p{
+        font-size: 25px;
+        padding: 0 0em;
+    }
     .hero-video video{
         width: 400px;
     }
 
-    .hero-text h1{
+    h1{
         font-size: 50px;
-    }
-    
-    .hero-text p{
-        font-size: 25px;
-        line-height: 1.10;
     }
     
     .hero-text a{
@@ -217,28 +295,60 @@ section.hero#sect2{
 }
 
 /* tablets */
+@media (max-width: 920px){
+    .btnDownload{
+        display: none;
+    }
+    .home-text .btnDownload_mobile{
+        text-align: center;
+        display: block;
+        font-family: 'squadron';
+        font-size: 35px;
+        border: 5px solid transparent;
+        cursor: pointer;
+        padding: 20px 10px;
+        width: 50%;
+        margin: 0px 25%;
+
+        background: transparent;
+        background-image: url("images/btnDownload_idle.png");
+        background-size: contain;
+        background-position: center;
+        background-origin: border-box;
+        background-repeat: no-repeat;
+
+        transition: all 0.4s ease;
+    }
+
+    .home-text .btnDownload_mobile:hover{
+        background-image: url("images/btnDownload_hover.png");
+    }
+}
 
 @media (max-width: 871px){
     img.team_logo{
-        height: 30px;
+        height: 25px;
         width: auto;
+        z-index: 1;
     }
     header{
         padding: 2em;   
     }
     #hamburger{
         display: block;
+        z-index: 1;
     }
     .nav{
+        z-index: -5;
         font-family: 'co2';
-        top: 100%;
+        top: 0%;
         right: -100%;
-        width: 25%;
+        width: 100%;
+        height: 100vh;
         align-items: center;
         flex-direction: column;
-        padding: 20px 20px;
+        padding: 100px 20px 20px 20px;
         position: absolute;
-        border-radius: 10px 0px 0px 10px;
         background: rgba(19, 19, 19, 0.9);
         backdrop-filter: blur(5px);
         transition: all 0.4s ease;
@@ -250,8 +360,11 @@ section.hero#sect2{
     .nav.open{
         right: 0%;
     }
+    
+    a.btnDownload{
+        display: none;
+    }
     .hero-text{
-        padding-top: 5em;
         text-align: center;
     }
     .hero-video video{
@@ -259,24 +372,31 @@ section.hero#sect2{
     }
     section.hero{
         grid-template-columns: auto;
-        gap: 0em;
+        align-content: center;
+        gap: 3em;
     }
     section.hero#sect2{
         grid-template-columns: auto;
         display: flex;
         flex-direction: column-reverse;
         justify-content: center;
+        gap: 3em;
     }
-    section.hero#sect2 .hero-text{
-        padding-top: 0em;
+    .about-header{
+        padding-top: 2em;
+        font-size: 35px;
+        font-family: 'squadron';
+        text-align: center;
     }
 }
 
 /* mobile devices */
 
 @media (max-width: 650px){
+    img.logo{
+        width: 400px;
+    }
     .hero-text{
-        padding-top: 6em;
         text-align: center;
     }
     .hero-video video{
@@ -288,10 +408,46 @@ section.hero#sect2{
     section.hero#sect2{
         padding: 0 1em;
     }
+    section.home-logo{
+        padding: 0 1em;
+    }
+    section.about{
+        padding: 0em 1em;
+        gap: 3em;
+    }
 }
 
 @media (max-width: 500px){
+    img.logo{
+        width: 300px;
+    }
     .hero-video video{
         width: 300px;
     }
+}
+
+/* ABOUT SECTION */
+@media (max-width: 1220px) {
+    .parent-profile{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .about-header{
+        padding-top: 2em;
+    }
+}
+
+@media (max-width: 650px){
+    .parent-profile{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1em;
+    }
+    .profile{
+        text-align: center;
+        justify-items: center;
+        grid-template-columns: auto;
+        padding: 2em;
+    }
+    
 }

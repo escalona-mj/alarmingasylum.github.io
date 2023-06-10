@@ -11,22 +11,47 @@
         <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
     </head>
     <body>
+        <!-- HEADER -->
         <header>
+
                 <a href="#"><img class="team_logo" src="https://raw.githubusercontent.com/escalona-mj/AlarmingAsylum/main/game/gui/splash1.png" alt=""></a>
                 <ul class="nav">
-                    <li><a href="#sect1">Home</a></li>
+                    <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
+                    <li><a class="btnDownload" onclick="testAlert()">Download Now</a></li> <!--TODO: link the website here after finishing the game -->
                 </ul>
                 <div class="hamburger-menu" id="hamburger"><img src="images/menu.png" width="50px" height="50px"></div>
+
         </header>
 
+        <div class="scroll-down">
+            <a href="#sect1"><i class="ri-arrow-down-s-line"></i></a>
+        </div>
+
+        <!-- LOGO SECTION -->
+        <section class="home-logo" id="home">
+
+            <div class="home-logo-image">
+                <img class="logo" src="https://raw.githubusercontent.com/escalona-mj/AlarmingAsylum/main/game/gui/menu/logo.png" alt="">
+            </div>
+
+            <div class="home-text">
+                <br>
+                <p>Step into the shoes of an average person who dares to explore the darkest secrets of an abandoned asylum, long forgotten by the world.</p>
+                <br>
+                <!-- WILL ONLY SHOW IN TABLETS AND PHONES -->
+                <a class="btnDownload_mobile" onclick="testAlert()">Download Now</a>
+                <h5><i class="ri-android-fill" style="vertical-align: middle;"></i> Only available in Android devices.</h5>
+            </div>
+
+        </section>
+
+        <!-- SECTION 1 -->
         <section class="hero" id="sect1">
 
             <div class="hero-text">
                 <h1>Only the brave will venture forth.</h1>
-                <p>Step into the shoes of an average person who dares to explore the darkest secrets of an abandoned asylum, long forgotten by the world. The choice is yours.</p>
-                <button class="btnDownload" onclick="testAlert()">Download Now</button> <!--TODO: link the website here after finishing the game -->
-                <h5><i class="ri-android-fill" style="vertical-align: middle;"></i> Only available in Android devices.</h5>
+                <p>Embark on a spine-tingling journey through the eerie hallways and decrepit corridors of the asylum. The choice is yours.</p>
             </div>
 
             <div class="hero-video">
@@ -34,11 +59,10 @@
                     <source src="video/preview1.mp4" type="video/mp4">
                 </video>
             </div>
-
+            
         </section>
 
-        <div class="gradient"></div>
-
+        <!-- SECTION 2 -->
         <section class="hero" id="sect2">
 
             <div class="hero-video">
@@ -54,7 +78,54 @@
 
         </section>
 
+        <!-- ABOUT SECTION-->
+        <section class="about" id="about">
+            <h1 class="about-header">Meet the people behind the team.</h1>
+            <div class="parent-profile">
+
+                <div class="profile">
+                    <div class="pfpic">
+                        <img class="pfp" src="images/mj.jpg" alt="">
+                    </div>
+                    <div class="profile-desc">
+                        <h1>Mark John Escalona</h1>
+                        <p>Programmer, UI Designer, Artist, Reformer</p>
+                        <!-- <a class="contact" href="#"><i class="ri-messenger-fill"></i></a> -->
+                    </div>    
+                </div>
+
+                <div class="profile">
+                    <img class="pfp" src="images/aron.jpg" alt="">
+                    <div class="profile-desc">
+                        <h1>Aron John Caballe</h1>
+                        <p>Sound Director, Author</p>
+                    </div>   
+                </div>
+
+                <div class="profile">
+                    <img class="pfp" src="images/luigi.jpg" alt="">
+                    <div class="profile-desc">
+                        <h1>Luigi Cabrera</h1>
+                        <p>Asset Director</p>
+                    </div>
+                </div>
+
+                <div class="profile">
+                    <img class="pfp" src="images/alonso.jpg" alt="">
+                    <div class="profile-desc">
+                        <h1>Jhon Alonso Gernale</h1>
+                        <p>Lead Author</p>
+                    </div>
+                </div>
+
+            </div>
+        
+        </section>
+
         <script src="function.js"></script>
         
+        <section class="footer">
+            <p>© Copyright, WonderDevs 2023. All rights are reserved.</p>
+        </section>
     </body>
 </html>

@@ -7,7 +7,12 @@ menu.onclick = () => {
 }
 
 //using the ScrollReveal from the external js script hosted in unpkg
-ScrollReveal({distance: '50px', duration: 2000, delay: 450});
+ScrollReveal({distance: '50px', duration: 1000, delay: 450});
+
+ScrollReveal().reveal('.home-logo-image',{delay:300, origin: 'top'});
+ScrollReveal().reveal('.home-text',{delay:400, origin: 'bottom'});
+ScrollReveal().reveal('.scroll-down',{delay:300, origin: 'top', reset: true});
+
 
 ScrollReveal().reveal('.hero-text',{delay:200, origin: 'top'});
 ScrollReveal().reveal('.hero-video',{delay:450, origin: 'bottom'});
