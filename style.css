@@ -148,9 +148,14 @@ section.home{
     font-size: 15px;
 }
 
-.home-text h5 i{
+.home-text i{
     color: #ffcf00;
     margin-right: 5px;
+    vertical-align: middle;
+}
+
+.home-text a{
+    color: #ffcf00;
 }
 
 .home-text .btnDownload_mobile{
