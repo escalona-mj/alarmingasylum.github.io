@@ -83,7 +83,7 @@ a.btnDownload{
     padding: 15px 20px;
 
     border-radius: 10px;
-    border: 2px solid rgba(255, 255, 255, 0.1);
+    border: 2px solid rgb(255, 207, 0, 0.25);
 }
 
 a.btnDownload:hover{
