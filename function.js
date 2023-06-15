@@ -22,8 +22,3 @@ ScrollReveal().reveal('#profile-mj',{delay:300, origin: 'top'});
 ScrollReveal().reveal('#profile-aron',{delay:400, origin: 'top'});
 ScrollReveal().reveal('#profile-luigi',{delay:500, origin: 'top'});
 ScrollReveal().reveal('#profile-alonso',{delay:600, origin: 'top'});
-
-
-function testAlert() {
-    alert("No link yet :(");
-}

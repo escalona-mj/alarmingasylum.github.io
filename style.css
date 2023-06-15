@@ -154,10 +154,6 @@ section.home{
     vertical-align: middle;
 }
 
-.home-text a{
-    color: #ffcf00;
-}
-
 .home-text .btnDownload_mobile{
     display: none;
 }
@@ -232,7 +228,7 @@ section.about {
 .profile{
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.25);
     display: grid;
     grid-template-columns: 25% 1fr;
     padding: 2em;
@@ -282,6 +278,15 @@ section.about {
     vertical-align: middle;
 }
 
+.home-text#footer{
+    display: grid;
+    gap: 5em;
+}
+
+.home-text#footer a{
+    color: #ffcf00;
+}
+
 /* smoller laptops */
 
 @media (max-width: 1160px){
@@ -323,7 +328,8 @@ section.about {
         margin: 10px 25%;
         border-radius: 10px;
         border: 2px solid rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(10px);
+        background-color: rgba(0, 0, 0, 0.25);
+
         
 
         transition: all 0.4s ease;
